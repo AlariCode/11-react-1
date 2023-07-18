@@ -1,9 +1,6 @@
 import './JournalItem.css';
 
-function JournalItem() {
-	const title = 'Подготовка к обновлению курсов';
-	const date = new Date();
-	const text = 'Горные походы открывают удивительные природные ландшафт';
+function JournalItem({ title, text, date }) {
 
   return (
 		<div className="journal-item">
