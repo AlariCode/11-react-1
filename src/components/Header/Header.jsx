@@ -15,7 +15,7 @@ function Header() {
 
 	return (
 		<>
-			<Logo image={logos[logoIndex]} />
+			<Logo image={logos[0]} />
 			<SelectUser />
 			<Button onClick={toggleLogo}>Сменить лого</Button>
 		</>

@@ -1,4 +1,5 @@
 import styles from './Logo.module.css';
+import { memo } from 'react';
 
 function Logo({ image }) {
 	console.log('Logo');
@@ -6,4 +7,4 @@ function Logo({ image }) {
 	return <img className={styles.logo} src={image} alt="Логотип журнала" />;
 }
 
-export default Logo;
+export default memo(Logo);
