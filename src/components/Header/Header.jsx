@@ -11,11 +11,12 @@ function Header() {
 
 	const toggleLogo = useCallback(() => {
 		setLogoIndex(state => Number(!state));
-	}, []);
+		console.log(logoIndex);
+	}, [logoIndex]);
 
 	return (
 		<>
-			<Logo image={logos[0]} />
+			<Logo image={logos[logoIndex]} />
 			<SelectUser />
 			<Button onClick={toggleLogo}>Сменить лого</Button>
 		</>
